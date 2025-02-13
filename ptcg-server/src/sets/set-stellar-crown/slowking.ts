@@ -9,7 +9,7 @@ function* useSeekInspiration(next: Function, store: StoreLike, state: State, eff
   const player = effect.player;
   const opponent = effect.opponent;
 
-  let maxRetries = 3;
+  const maxRetries = 3;
   
   if (player.deck.cards.length <= 0) { return state; }  // Attack does nothing if deck is empty.
   const deckTop = new CardList();

@@ -15,11 +15,11 @@ export class Garganacl extends PokemonCard {
   public weakness = [{ type: G }];
   public retreat = [C, C, C];
 
-    public powers = [{
-      name: 'Blessed Salt',
-      powerType: PowerType.ABILITY,
-      text: 'During Pokémon Checkup, heal 20 damage from each of your Pokémon.'
-    }];
+  public powers = [{
+    name: 'Blessed Salt',
+    powerType: PowerType.ABILITY,
+    text: 'During Pokémon Checkup, heal 20 damage from each of your Pokémon.'
+  }];
 
   public attacks = [{
     name: 'Knocking Hammer',

@@ -1,6 +1,6 @@
-import { Attack, CardType, CardTarget, EnergyType, PlayerType, PokemonCard, Power, PowerType, SlotType, Stage, State, StoreLike, Weakness } from "../../game";
-import { Effect } from "../../game/store/effects/effect";
-import { ATTACH_ENERGY_FROM_DECK, DISCARD_ALL_ENERGY_FROM_POKEMON, WAS_ATTACK_USED, WAS_POWER_USED } from "../../game/store/prefabs/prefabs";
+import { Attack, CardType, CardTarget, EnergyType, PlayerType, PokemonCard, Power, PowerType, SlotType, Stage, State, StoreLike, Weakness } from '../../game';
+import { Effect } from '../../game/store/effects/effect';
+import { ATTACH_ENERGY_FROM_DECK, DISCARD_ALL_ENERGY_FROM_POKEMON, WAS_ATTACK_USED, WAS_POWER_USED } from '../../game/store/prefabs/prefabs';
 
 export class Pawmot extends PokemonCard {
 
@@ -32,7 +32,7 @@ export class Pawmot extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (WAS_POWER_USED(effect, 0, this)) {
-      let blocked: CardTarget[] = [];
+      const blocked: CardTarget[] = [];
       effect.player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card, target) => {
         if (card !== this)
           blocked.push(target);

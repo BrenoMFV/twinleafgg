@@ -1,5 +1,5 @@
-import { Snorlax } from "../set-pokemon-151/snorlax";
-import { Pawmot } from "../set-scarlet-and-violet/pawmot";
+import { Snorlax } from '../set-pokemon-151/snorlax';
+import { Pawmot } from '../set-scarlet-and-violet/pawmot';
 
 export class PawmotSVP extends Pawmot {
   public setNumber = '6';

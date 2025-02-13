@@ -20,7 +20,7 @@ export class StevensCarbink extends PokemonCard {
     text: 'As long as this Pokémon is on the Bench, each of your Steven\'s Pokémon takes 30 less damage ' +
       'from attacks from your opponent\'s Pokémon (after applying Weakness and Resistance). ' +
       'The effect of Stone Palace doesn\'t stack.'
-  }]
+  }];
 
   public attacks = [{ name: 'Magical Shot', cost: [P, C, C], damage: 80, text: '' }];
 

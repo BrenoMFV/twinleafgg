@@ -1,4 +1,4 @@
-import { SacredAsh } from "../set-flashfire/sacred-ash";
+import { SacredAsh } from '../set-flashfire/sacred-ash';
 
 export class SacredAshSV9a extends SacredAsh {
   public regulationMark = 'I';
